@@ -2,9 +2,9 @@ import React from 'react'
 
 
 
-const  WelcomeFunctionComponent = () => (
+const  WelcomeFunctionComponent = (props) => (
     <div>
-        <h1>Welcome Function!</h1>
+        <h1>Welcome Function! {props.name}</h1>
    </div>
 )
 
