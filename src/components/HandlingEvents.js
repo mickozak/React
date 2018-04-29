@@ -11,19 +11,27 @@ const styles = {
 }
 
 class HandlingEvents extends React.Component{
-    constructor(){
+    constructor() {
         super()
         this.state = {
-            text: 'My name is Michael.'
+            text: true
         }
-        this.change = () => this.setState({text: 'I am 25 years old.'})
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick(){
+        this.setState(prev=>({
+            text: !prev.text
+        }))
     }
 
     render(){
         return(
             <div>
-                <h1>{this.state.text}</h1>
-                <button onClick={this.change} style={styles.btn}>CHANGE</button>
+                <h1>
+                    {this.state.text ? 'My name is Michael.' : 'I am 25 years old.'}
+                </h1>
+                <button onClick={this.handleClick} style={styles.btn}>CHANGE</button>
             </div>
         )
     }

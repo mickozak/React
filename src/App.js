@@ -8,6 +8,8 @@ import User from './components/User'
 import Clock from './components/Clock'
 import Counter from './components/Counter'
 import HandlingEvents from "./components/HandlingEvents";
+import Toggle from "./components/Toggle"
+import LoginControl from './components/conditionalRendering/LoginControl'
 
 
 
@@ -28,6 +30,10 @@ const App = (props) => (
         <Counter/>
         <hr/>
         <HandlingEvents/>
+        <hr/>
+        <Toggle/>
+        <hr/>
+        <LoginControl/>
     </div>
 )
 
