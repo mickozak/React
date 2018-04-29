@@ -10,9 +10,10 @@ import Counter from './components/Counter'
 import HandlingEvents from "./components/HandlingEvents";
 import Toggle from "./components/Toggle"
 import LoginControl from './components/conditionalRendering/LoginControl'
+import Mailbox from './components/Mailbox'
 
 
-
+const messages = ['React', 'Re: React', 'Re:Re: React'];
 
 
 const App = (props) => (
@@ -34,6 +35,8 @@ const App = (props) => (
         <Toggle/>
         <hr/>
         <LoginControl/>
+        <hr/>
+        <Mailbox unreadMessages={messages}/>
     </div>
 )
 
