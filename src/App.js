@@ -7,6 +7,8 @@ import WelcomeClassComponent from './components/WelcomeClassComponent'
 import User from './components/User'
 import Clock from './components/Clock'
 import Counter from './components/Counter'
+import HandlingEvents from "./components/HandlingEvents";
+
 
 
 
@@ -24,6 +26,8 @@ const App = (props) => (
         <Clock/>
         <hr/>
         <Counter/>
+        <hr/>
+        <HandlingEvents/>
     </div>
 )
 

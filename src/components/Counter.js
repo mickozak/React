@@ -3,7 +3,8 @@ import RaisedButton from 'material-ui/RaisedButton'
 
 const styles = {
     btn: {
-        margin: '10px'
+        margin: '10px',
+        fontSize: '10px'
     }
 }
 
