@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import './App.css';
+import AppBar from 'material-ui/AppBar'
+import Drawer from 'material-ui/Drawer'
 
 import WelcomeFunctionComponent from './components/WelcomeFunctionComponent'
 import WelcomeClassComponent from './components/WelcomeClassComponent'
@@ -20,8 +22,17 @@ const messages = ['React', 'Re: React', 'Re:Re: React'];
 
 const App = (props) => (
     <div>
+        <AppBar
+                title="React - Exercises"
+                onLeftIconButtonClick={() => alert('click')}
+        />
         <Router>
             <div>
+
+                <Drawer open={true}>
+
+                </Drawer>
+
                 <Link to={'/'}> Home </Link>
                 <Link to={'/welcomefunctioncomponent'}> Function Component </Link>
                 <Link to={'/welcomeclasscomponent'}> Class Component </Link>
