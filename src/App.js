@@ -5,6 +5,9 @@ import './App.css';
 import WelcomeFunctionComponent from './components/WelcomeFunctionComponent'
 import WelcomeClassComponent from './components/WelcomeClassComponent'
 import User from './components/User'
+import Clock from './components/Clock'
+
+
 
 
 const App = (props) => (
@@ -14,7 +17,7 @@ const App = (props) => (
         <WelcomeFunctionComponent name='Display the prop! - 3'/>
         <WelcomeClassComponent/>
         <User/>
-
+        <Clock/>
     </div>
 )
 

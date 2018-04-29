@@ -7,7 +7,7 @@ import Phone from '../components/usercomponents/Phone'
 const User = (props) => (
 
     <div>
-        <h1>USER</h1>
+        <h1>User - Extracting Components</h1>
         <p>Name: <Name/></p>
         <p>Age: <Age/></p>
         <p>Phone: <Phone/></p>
