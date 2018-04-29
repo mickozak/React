@@ -20,51 +20,54 @@ import Login from './components/Login'
 const messages = ['React', 'Re: React', 'Re:Re: React'];
 
 
-const App = (props) => (
-    <div>
-        <AppBar
-                title="React - Exercises"
-                onLeftIconButtonClick={() => alert('click')}
-        />
-        <Router>
-            <div>
+class App extends React.Component {
+        render(){
+                return(
+                    <div>
+                        <AppBar
+                            title="React - Exercises"
+                            onLeftIconButtonClick={() => alert('click')}
+                        />
+                        <Router>
+                            <div>
+                                <Drawer open={true}>
+                                    <Link to={'/'}> Home </Link>
+                                    <Link to={'/welcomefunctioncomponent'}> Function Component </Link>
+                                    <Link to={'/welcomeclasscomponent'}> Class Component </Link>
+                                    <Link to={'/user'}> User </Link>
+                                    <Link to={'/clock'}> Clock </Link>
+                                    <Link to={'/counter'}> Counter </Link>
+                                    <Link to={'/handlingevents'}> Handling Events </Link>
+                                    <Link to={'/toggle'}> Toggle </Link>
+                                    <Link to={'/logincontrol'}> Login Control </Link>
+                                    <Link to={'/mailbox'}> Mailbox </Link>
+                                    <Link to={'/login'}> Login </Link>
+                                </Drawer>
 
-                <Drawer open={true}>
+                                <Route path={'/welcomefunctioncomponent'} render={() => (
+                                    <WelcomeFunctionComponent name={'Display the prop!'}/>
+                                )}/>
+                                <Route path={'/welcomeclasscomponent'} render={() => (
+                                    <WelcomeClassComponent name={'Display the prop!'}/>
+                                )}/>
+                                <Route path={'/user'} component={User} />
+                                <Route path={'/clock'} component={Clock} />
+                                <Route path={'/counter'} component={Counter} />
+                                <Route path={'/handlingevents'} component={HandlingEvents} />
+                                <Route path={'/toggle'} component={Toggle} />
+                                <Route path={'/logincontrol'} component={LoginControl} />
+                                <Route path={'/mailbox'} render={() => (
+                                    <Mailbox unreadMessages={messages}/>
+                                )}/>
+                                <Route path={'/login'} component={Login} />
+                            </div>
+                        </Router>
+                    </div>
+                )
+        }
+}
 
-                </Drawer>
 
-                <Link to={'/'}> Home </Link>
-                <Link to={'/welcomefunctioncomponent'}> Function Component </Link>
-                <Link to={'/welcomeclasscomponent'}> Class Component </Link>
-                <Link to={'/user'}> User </Link>
-                <Link to={'/clock'}> Clock </Link>
-                <Link to={'/counter'}> Counter </Link>
-                <Link to={'/handlingevents'}> Handling Events </Link>
-                <Link to={'/toggle'}> Toggle </Link>
-                <Link to={'/logincontrol'}> Login Control </Link>
-                <Link to={'/mailbox'}> Mailbox </Link>
-                <Link to={'/login'}> Login </Link>
-
-                <Route path={'/welcomefunctioncomponent'} render={() => (
-                    <WelcomeFunctionComponent name={'Display the prop!'}/>
-                )}/>
-                <Route path={'/welcomeclasscomponent'} render={() => (
-                    <WelcomeClassComponent name={'Display the prop!'}/>
-                )}/>
-                <Route path={'/user'} component={User} />
-                <Route path={'/clock'} component={Clock} />
-                <Route path={'/counter'} component={Counter} />
-                <Route path={'/handlingevents'} component={HandlingEvents} />
-                <Route path={'/toggle'} component={Toggle} />
-                <Route path={'/logincontrol'} component={LoginControl} />
-                <Route path={'/mailbox'} render={() => (
-                    <Mailbox unreadMessages={messages}/>
-                )}/>
-                <Route path={'/login'} component={Login} />
-            </div>
-        </Router>
-    </div>
-)
 
 
 
