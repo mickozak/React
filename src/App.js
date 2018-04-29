@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './App.css';
 import AppBar from 'material-ui/AppBar'
 
@@ -16,9 +16,7 @@ import Mailbox from './components/Mailbox'
 import Login from './components/Login'
 import SideBar from './components/SideBar'
 
-
 const messages = ['React', 'Re: React', 'Re:Re: React'];
-
 
 class App extends React.Component {
     state = {
@@ -34,7 +32,7 @@ class App extends React.Component {
                     <div>
                         <AppBar
                             title="React - Exercises"
-                            onLeftIconButtonClick={this.drawerBtnClickHandler()}
+                            onLeftIconButtonClick={this.drawerBtnClickHandler}
                         />
                         <Router>
                             <div>
