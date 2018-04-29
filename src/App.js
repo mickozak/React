@@ -11,6 +11,7 @@ import HandlingEvents from "./components/HandlingEvents";
 import Toggle from "./components/Toggle"
 import LoginControl from './components/conditionalRendering/LoginControl'
 import Mailbox from './components/Mailbox'
+import Login from './components/Login'
 
 
 const messages = ['React', 'Re: React', 'Re:Re: React'];
@@ -37,6 +38,8 @@ const App = (props) => (
         <LoginControl/>
         <hr/>
         <Mailbox unreadMessages={messages}/>
+        <hr/>
+        <Login/>
     </div>
 )
 
