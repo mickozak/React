@@ -15,8 +15,8 @@ Exercises:
 - conditional rendering,
 - lists,
 - keys,
-- forms,
-- router,
-- material-ui.
+- forms.
+
+Also used: node, npm, material-ui, router, create react app.
 
 Link.: https://mickozak.github.io/React/
