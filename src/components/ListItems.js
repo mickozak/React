@@ -12,7 +12,7 @@ class ListItems extends React.Component{
 
         return(
             <div>
-                <h2>Rendering Multiple Components</h2>
+                <h1>Lists - (Exercise - Rendering Multiple Components)</h1>
                 <ul>
                     {listItems}
                 </ul>

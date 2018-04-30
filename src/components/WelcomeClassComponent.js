@@ -6,7 +6,13 @@ class WelcomeClassComponent extends React.Component{
     }
 
     render() {
-        return <h1>Welcome Class! {this.props.name}</h1>
+
+        return (
+            <div>
+                <h1>Welcome - (Exercise - Class Component)</h1>
+                <h2>Welcome Class! {this.props.name}</h2>
+            </div>
+        )
     }
 }
 

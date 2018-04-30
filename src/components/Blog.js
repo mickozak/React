@@ -22,7 +22,7 @@ const content = props.posts.map((post)=>
 
     return(
         <div>
-            <h1>Keys</h1>
+            <h1>Blog - (Exercise - Keys)</h1>
             {sidebar}
             <hr/>
             {content}

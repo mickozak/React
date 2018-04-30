@@ -21,7 +21,7 @@ class Counter extends React.Component{
     render(){
         return(
             <div>
-                <h1>Counter - State - Material-UI</h1>
+                <h1>Counter - (Exercise - State - Material-UI)</h1>
                 <h2>{this.state.count}</h2>
                 <RaisedButton
                 label={'-'}

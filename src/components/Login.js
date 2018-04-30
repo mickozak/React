@@ -26,7 +26,7 @@ class Login extends React.Component{
         const inLoggedIn = this.state.inLoggedIn
         return(
             <div>
-                <h1>Login User (Inline If-Else with Conditional Operator)</h1>
+                <h1>Login User (Exercise - Inline If-Else with Conditional Operator)</h1>
                 <h2>The user is {inLoggedIn ? 'currently' : 'not'} logged in.</h2>
             </div>
         )

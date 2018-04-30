@@ -36,6 +36,7 @@ class LoginControl extends React.Component{
 
         return(
             <div>
+                <h1>Login Control (Exercise - Element Variables)</h1>
                 <Greeting  isLoggedIn={isLoggedIn}/>
                 {button}
             </div>

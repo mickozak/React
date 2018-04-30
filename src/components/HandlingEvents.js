@@ -28,9 +28,10 @@ class HandlingEvents extends React.Component{
     render(){
         return(
             <div>
-                <h1>
+                <h1>Change - (Exercise - Handling Events)</h1>
+                <h2>
                     {this.state.text ? 'My name is Michael.' : 'I am 25 years old.'}
-                </h1>
+                </h2>
                 <button onClick={this.handleClick} style={styles.btn}>CHANGE</button>
             </div>
         )
