@@ -17,6 +17,7 @@ import Login from './components/Login'
 import SideBar from './components/SideBar'
 import ListItems from './components/ListItems'
 import Blog from './components/Blog'
+import NameForm from './components/NameForm'
 
 const messages = ['React', 'Re: React', 'Re:Re: React'];
 
@@ -67,6 +68,7 @@ class App extends React.Component {
                                 <Route path={'/blog'} render={() => (
                                     <Blog posts={posts}/>
                                 )}/>
+                                <Route path={'/nameform'} component={NameForm} />
                             </div>
                         </Router>
                     </div>

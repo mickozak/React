@@ -22,6 +22,7 @@ const SideBar = (props) => (
         <Link to={'/login'}> <MenuItem>Login </MenuItem></Link>
         <Link to={'/listitems'}> <MenuItem>Lists </MenuItem></Link>
         <Link to={'/blog'}> <MenuItem>Keys </MenuItem></Link>
+        <Link to={'/nameform'}> <MenuItem>Form </MenuItem></Link>
     </Drawer>
 )
 
