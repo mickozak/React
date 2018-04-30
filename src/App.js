@@ -15,8 +15,15 @@ import LoginControl from './components/conditionalRendering/LoginControl'
 import Mailbox from './components/Mailbox'
 import Login from './components/Login'
 import SideBar from './components/SideBar'
+import ListItems from './components/ListItems'
+import Blog from './components/Blog'
 
 const messages = ['React', 'Re: React', 'Re:Re: React'];
+
+const posts = [
+    {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+    {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+];
 
 class App extends React.Component {
     state = {
@@ -25,7 +32,6 @@ class App extends React.Component {
         drawerBtnClickHandler = () => this.setState({
            isDrawerOpen: !this.state.isDrawerOpen
         })
-
 
         render(){
                 return(
@@ -57,15 +63,15 @@ class App extends React.Component {
                                     <Mailbox unreadMessages={messages}/>
                                 )}/>
                                 <Route path={'/login'} component={Login} />
+                                <Route path={'/listitems'} component={ListItems}/>
+                                <Route path={'/blog'} render={() => (
+                                    <Blog posts={posts}/>
+                                )}/>
                             </div>
                         </Router>
                     </div>
                 )
         }
 }
-
-
-
-
 
 export default App;

@@ -20,6 +20,8 @@ const SideBar = (props) => (
         <Link to={'/logincontrol'}> <MenuItem>Login Control </MenuItem></Link>
         <Link to={'/mailbox'}> <MenuItem>Mailbox </MenuItem></Link>
         <Link to={'/login'}> <MenuItem>Login </MenuItem></Link>
+        <Link to={'/listitems'}> <MenuItem>Lists </MenuItem></Link>
+        <Link to={'/blog'}> <MenuItem>Keys </MenuItem></Link>
     </Drawer>
 )
 
