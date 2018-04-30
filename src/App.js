@@ -38,7 +38,7 @@ class App extends React.Component {
                 return(
                     <div>
                         <AppBar
-                            title="React - Exercises"
+                            title="React - Exercises - Open the menu"
                             onLeftIconButtonClick={this.drawerBtnClickHandler}
                         />
                         <Router>
