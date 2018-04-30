@@ -8,6 +8,7 @@ Exercises:
 - rendering elements,
 - function components,
 - class components,
+- extracting components,
 - props,
 - state,
 - lifecycle,
