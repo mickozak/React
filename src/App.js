@@ -20,6 +20,7 @@ import Blog from './components/Blog'
 import NameForm from './components/NameForm'
 import ProductDataTable from './productdatatable/ProductDataTable'
 import CalculatorApp from './calculator/CalculatorApp'
+import Game from './tictactoe/Game'
 
 const messages = ['React', 'Re: React', 'Re:Re: React'];
 
@@ -73,6 +74,7 @@ class App extends React.Component {
                                 <Route path={'/nameform'} component={NameForm} />
                                 <Route path={'/productdatatable'} component={ProductDataTable} />
                                 <Route path={'/calculator'} component={CalculatorApp} />
+                                <Route path={'/tictactoe'} component={Game} />
                             </div>
                         </Router>
                     </div>

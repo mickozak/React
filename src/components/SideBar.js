@@ -25,6 +25,8 @@ const SideBar = (props) => (
         <Link to={'/nameform'}> <MenuItem>Form </MenuItem></Link>
         <Link to={'/productdatatable'}> <MenuItem>App - Product Data Table</MenuItem></Link>
         <Link to={'/calculator'}> <MenuItem>App - Calculator</MenuItem></Link>
+        <Link to={'/tictactoe'}> <MenuItem>Game - Tic Tac Toe</MenuItem></Link>
+
     </Drawer>
 )
 
