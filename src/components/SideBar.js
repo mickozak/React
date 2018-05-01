@@ -23,6 +23,8 @@ const SideBar = (props) => (
         <Link to={'/listitems'}> <MenuItem>Lists </MenuItem></Link>
         <Link to={'/blog'}> <MenuItem>Keys </MenuItem></Link>
         <Link to={'/nameform'}> <MenuItem>Form </MenuItem></Link>
+        <Link to={'/productdatatable'}> <MenuItem>App - Product Data Table</MenuItem></Link>
+        <Link to={'/calculator'}> <MenuItem>App - Calculator</MenuItem></Link>
     </Drawer>
 )
 

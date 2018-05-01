@@ -18,6 +18,8 @@ import SideBar from './components/SideBar'
 import ListItems from './components/ListItems'
 import Blog from './components/Blog'
 import NameForm from './components/NameForm'
+import ProductDataTable from './productdatatable/ProductDataTable'
+import Calculator from './calculator/Calculator'
 
 const messages = ['React', 'Re: React', 'Re:Re: React'];
 
@@ -69,6 +71,8 @@ class App extends React.Component {
                                     <Blog posts={posts}/>
                                 )}/>
                                 <Route path={'/nameform'} component={NameForm} />
+                                <Route path={'/productdatatable'} component={ProductDataTable} />
+                                <Route path={'/calculator'} component={Calculator} />
                             </div>
                         </Router>
                     </div>
