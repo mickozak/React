@@ -1,7 +1,11 @@
 import React from 'react'
 
+import Calculator from './Calculator'
+
 const CalculatorApp = () => (
-    <h1>SOON</h1>
+    <div>
+        <Calculator/>
+    </div>
 )
 
 export default CalculatorApp
