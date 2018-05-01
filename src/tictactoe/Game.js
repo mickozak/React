@@ -3,7 +3,7 @@ import '../index.css';
 
 import Board from './Board'
 
-function calculateWinner (squares){
+const calculateWinner = (squares) => {
     const lines = [
         [0, 1, 2],
         [3, 4, 5],
@@ -78,7 +78,7 @@ class Game extends React.Component{
         if (winner){
             status = 'winner: ' + winner
         } else {
-            status = 'Next player: ' + (this.state.xISNext ? 'X' : '0')
+            status = 'Next player: ' + (this.state.xIsNext ? 'X' : '0')
         }
 
         return(

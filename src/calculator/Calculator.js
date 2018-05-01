@@ -1,20 +1,19 @@
 import React from 'react'
 
 import TemperatureInput from './TemperatureInput'
-import BoilingVerdict from "./BoilingVerdict";
-
+import BoilingVerdict from "./BoilingVerdict"
 
 //Function
 
-function toCelsius(fahrenheit) {
-    return (fahrenheit-32)*5/9
-}
+const toCelsius = (fahrenheit) => (
+    (fahrenheit-32)*5/9
+)
 
-function toFahrenheit(celsius) {
-    return (celsius*9/5)+32
-}
+const toFahrenheit = (celsius) => (
+    (celsius*9/5)+32
+)
 
-function tryConvert(temperature,convert) {
+const tryConvert = (temperature,convert) => {
     const input = parseFloat(temperature)
     if (Number.isNaN(input)) {
         return ''
@@ -50,7 +49,6 @@ class Calculator extends React.Component {
         const temperature = this.state.temperature
         const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature
         const fahrenhet = scale === 'c' ? tryConvert(temperature,toFahrenheit) : temperature
-
 
         return(
             <div>
