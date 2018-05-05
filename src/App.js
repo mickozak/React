@@ -21,6 +21,7 @@ import NameForm from './components/NameForm'
 import ProductDataTable from './productdatatable/ProductDataTable'
 import CalculatorApp from './calculator/CalculatorApp'
 import Game from './tictactoe/Game'
+import Fetch from './datafetch/Fetch'
 
 const messages = ['React', 'Re: React', 'Re:Re: React'];
 
@@ -75,6 +76,7 @@ class App extends React.Component {
                                 <Route path={'/productdatatable'} component={ProductDataTable} />
                                 <Route path={'/calculator'} component={CalculatorApp} />
                                 <Route path={'/tictactoe'} component={Game} />
+                                <Route path={'/datafetch'} component={Fetch} />
                             </div>
                         </Router>
                     </div>

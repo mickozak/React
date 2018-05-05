@@ -26,7 +26,7 @@ const SideBar = (props) => (
         <Link to={'/productdatatable'}> <MenuItem>App - Product Data Table</MenuItem></Link>
         <Link to={'/calculator'}> <MenuItem>App - Calculator</MenuItem></Link>
         <Link to={'/tictactoe'}> <MenuItem>Game - Tic Tac Toe</MenuItem></Link>
-
+        <Link to={'/datafetch'}> <MenuItem>Data Fetch</MenuItem></Link>
     </Drawer>
 )
 
