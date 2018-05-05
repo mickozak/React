@@ -19,8 +19,9 @@ Exercises:
 - forms
 - app - product data table,
 - app - calculator,
-- game - tic tac toe.
+- game - tic tac toe
+- data fetch.
 
-Also used: node, npm, material-ui, router, create react app.
+Also used: node, npm, material-ui, router, create react app, fetch.
 
 Link.: https://mickozak.github.io/React/
